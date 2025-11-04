@@ -1,11 +1,12 @@
 import { useState } from 'react'
 import icon from '/icon.png'
-import icon2 from '/icon2.png'
-import icon3 from '/icon3.png'
-import logo from '/logo.png'
-import instagramIcon from '/instagram-icon.png'
-import facebookIcon from '/facebook-icon.svg'
-import tiktokIcon from '/tiktok-icon.png'
+import icon1 from "/icon1.png";
+import icon2 from "/icon2.png";
+import icon3 from "/icon3.png";
+import logo from "/logo.png";
+import instagramIcon from "/instagram-icon.png";
+import facebookIcon from "/facebook-icon.svg";
+import tiktokIcon from "/tiktok-icon.png";
 
 function App() {
   const produk = "https://olshopin.com/t/hanamiprinting";
@@ -18,9 +19,9 @@ function App() {
   return (
     <section className="mx-auto w-6/12 flex flex-col gap-5 justify-center items-center h-full overflow-auto p-5 bg-white/50 shadow-2xl">
       <img
-        src={icon}
+        src={icon3}
         alt="Hanami Printing"
-        className="w-30 rounded-xl shadow-xl"
+        className="w-50 rounded-xl shadow-xl"
       />
       <div className="flex flex-col justify-center items-center cursor-default">
         <h1 className="font-bold m-0 text-orange-500 text-4xl">
@@ -51,14 +52,29 @@ function App() {
       <div className="flex flex-col justify-center items-center cursor-default">
         <h1 className="font-bold mb-1 text-orange-500">Ikuti Toko Kami :</h1>
         <div className="mx-auto flex justify-center items-center gap-3">
-          <a href={instagram} target='_blank' className='w-10 h-10 bg-white shadow-md rounded-full flex justify-center items-center transition-all duration-300 hover:scale-120' title='Instagram'>
-            <img src={instagramIcon} alt="Instagram" className='w-5' />
+          <a
+            href={instagram}
+            target="_blank"
+            className="w-10 h-10 bg-white shadow-md rounded-full flex justify-center items-center transition-all duration-300 hover:scale-120"
+            title="Instagram"
+          >
+            <img src={instagramIcon} alt="Instagram" className="w-5" />
           </a>
-          <a href={facebook} target='_blank' className='w-10 h-10 bg-white shadow-md rounded-full flex justify-center items-center transition-all duration-300 hover:scale-120' title='Facebook'>
-            <img src={facebookIcon} alt="Facebook" className='w-5' />
+          <a
+            href={facebook}
+            target="_blank"
+            className="w-10 h-10 bg-white shadow-md rounded-full flex justify-center items-center transition-all duration-300 hover:scale-120"
+            title="Facebook"
+          >
+            <img src={facebookIcon} alt="Facebook" className="w-5" />
           </a>
-          <a href={tiktok} target='_blank' className='w-10 h-10 bg-white shadow-md rounded-full flex justify-center items-center transition-all duration-300 hover:scale-120' title='Tiktok'>
-            <img src={tiktokIcon} alt="Tiktok" className='w-5' />
+          <a
+            href={tiktok}
+            target="_blank"
+            className="w-10 h-10 bg-white shadow-md rounded-full flex justify-center items-center transition-all duration-300 hover:scale-120"
+            title="Tiktok"
+          >
+            <img src={tiktokIcon} alt="Tiktok" className="w-5" />
           </a>
         </div>
       </div>
