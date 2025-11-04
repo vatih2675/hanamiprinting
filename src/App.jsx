@@ -25,7 +25,7 @@ function App() {
   const tiktok = "http://www.tiktok.com/@hanamiprinting.id";
 
   return (
-    <section className="mx-auto w-6/12 flex flex-col gap-5 justify-center items-center h-full overflow-auto p-5 bg-white/50 shadow-2xl">
+    <section className="mx-auto scale-85 md:w-6/12 flex flex-col gap-5 justify-center items-center h-full overflow-auto p-5 bg-white/50 shadow-2xl">
       <img
         src={icon3}
         alt="Hanami Printing"
