@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import { dataLayanan } from "../constants/Data";
 
 export default function ServicesBest() {
@@ -14,7 +15,7 @@ export default function ServicesBest() {
                 <h1 className="text-3xl text-orange-500 mb-3">Layanan Unggulan</h1>
                 <div className="w-full flex flex-col justify-center items-center">
                     {dataLayanan.map(({judul, link, gambar, bintang, keterangan, online}, index) => (
-                        <a key={index} href={`/layanan-${link}`} className={`w-full p-2 flex justify-center items-center gap-2 border-b border-gray-300 hover:bg-white/25 transition-all duration-300 `}>
+                        <NavLink key={index} to={`/layanan-${link}`} className={`w-full p-2 flex justify-center items-center gap-2 border-b border-gray-300 hover:bg-white/25 transition-all duration-300 `}>
                             <img src={`../layanan/${gambar}`} alt={judul} className="w-3/12 rounded-md" />
                             <div className="w-full flex flex-col justify-center items-start">
                                 <h1 className="font-bold">{judul}</h1>
@@ -26,7 +27,7 @@ export default function ServicesBest() {
                                     <i className="bi-star-fill text-lg text-orange-400"></i>
                                 </div>
                             </div>
-                        </a>
+                        </NavLink>
                     ))}
                 </div>
             </div>

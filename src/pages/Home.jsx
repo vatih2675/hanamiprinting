@@ -1,6 +1,7 @@
 import icon3 from "/icon3.png";
 import logo from "/logo-no-bg.png";
 import digitalPrinting from "/digital-printing.png";
+import { NavLink } from "react-router-dom";
 
 export default function Home({dataApp, dataPembayaran, dataLayanan}) {
   return (
@@ -80,7 +81,7 @@ export default function Home({dataApp, dataPembayaran, dataLayanan}) {
         </h1>
         <div className="w-full flex flex-wrap justify-center items-start">
           {dataLayanan.map(({judul, link, gambar, bintang, keterangan, online}, index) => (
-            <a href={`/layanan-${link}`} key={index} className="w-3/12 p-5 cursor-pointer hover:scale-105 transition-all duration-300">
+            <NavLink to={`/layanan-${link}`} key={index} className="w-3/12 p-5 cursor-pointer hover:scale-105 transition-all duration-300">
               <img
                 src={`./layanan/${gambar}`}
                 alt={judul}
@@ -94,7 +95,7 @@ export default function Home({dataApp, dataPembayaran, dataLayanan}) {
                 <i className="bi-star-fill text-lg text-orange-400"></i>
                 <i className="bi-star-fill text-lg text-orange-400"></i>
               </div>
-            </a>
+            </NavLink>
           ))}
         </div>
         <a
