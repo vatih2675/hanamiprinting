@@ -11,7 +11,7 @@ export default function Services({dataLayanan}) {
                     <h1 className="text-5xl text-orange-500 mb-10">Layanan Percetakan</h1>
                     <div className="w-full grid grid-cols-3 gap-4">
                         {dataLayanan.map(({judul, link, gambar, bintang, keterangan, online}, index) => (
-                            <a href={`/layanan/${link}`} key={index} className="w-full bg-white rounded-2xl p-5 cursor-pointer hover:scale-105 transition-all duration-300 hover:shadow-black/20 hover:shadow-xl">
+                            <a href={`/layanan-${link}`} key={index} className="w-full bg-white rounded-2xl p-5 cursor-pointer hover:scale-105 transition-all duration-300 hover:shadow-black/20 hover:shadow-xl">
                                 <img
                                     src={`./layanan/${gambar}`}
                                     alt={judul}
