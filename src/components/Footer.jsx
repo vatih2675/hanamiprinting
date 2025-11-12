@@ -68,7 +68,7 @@ export default function Footer({dataApp,dataLayanan, dataPembayaran}) {
           <ul className="w-full list-disc ms-5">
             {dataLayanan.map(({judul, link, gambar, bintang, keterangan, online}, index) => (
                 <li key={index} className="w-full hover:text-orange-300 transition-all duration-300 cursor-pointer">
-                  <NavLink to={`/layanan-${link}`} className="w-full">{judul}</NavLink>
+                  <NavLink to={`/layanan/${link}`} className="w-full">{judul}</NavLink>
                 </li>
             ))}
           </ul>

@@ -9,7 +9,7 @@ export default function Fotocopy({dataApp}) {
                 </div>
                 <div className="w-full ps-10">
                     <div className="flex justify-start items-center w-full gap-2 mb-10 text-3xl">
-                        <a href="/layanan" className="text-3xl hover:text-orange-500 transition-all duration-300"><i className="bi-arrow-left me-2"></i>Layanan</a>
+                        <NavLink to="/layanan" className="text-3xl hover:text-orange-500 transition-all duration-300"><i className="bi-arrow-left me-2"></i>Layanan</NavLink>
                         <span>/</span>
                         <h1 className="text-3xl text-orange-500 font-bold">Fotocopy</h1>
                     </div>
