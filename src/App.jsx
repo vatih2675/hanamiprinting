@@ -1,148 +1,64 @@
-import { useState } from 'react'
-import icon from '/icon.png'
-import icon1 from "/icon1.png";
-import icon2 from "/icon2.png";
-import icon3 from "/icon3.png";
-import logo from "/logo.png";
-import instagramIcon from "/instagram-icon.png";
-import facebookIcon from "/facebook-icon.svg";
-import tiktokIcon from "/tiktok-icon.png";
-import alloBankLogo from "/pembayaran/AlloBank.png";
-import bcaLogo from "/pembayaran/BCA.svg";
-import danaLogo from "/pembayaran/Dana.svg";
-import gopayLogo from "/pembayaran/GoPay.svg";
-import muamalatLogo from "/pembayaran/Muamalat.jpg";
-import ovoLogo from "/pembayaran/OVO.svg";
-import seaBankLogo from "/pembayaran/SeaBank.svg";
-import shopeePayLogo from "/pembayaran/ShopeePay.svg";
+import { BrowserRouter, href, NavLink, Route, Routes } from "react-router-dom";
+import { useState } from "react";
+import Home from "./pages/Home";
+import Services from "./pages/Services";
+import Fotocopy from "./pages/services/Fotocopy";
+import Jilid from "./pages/services/Jilid";
+import Laminating from "./pages/services/Laminating";
+import CetakDokumen from "./pages/services/CetakDokumen";
+import CetakFotoPassphoto from "./pages/services/CetakFotoPassphoto";
+import CetakUndangan from "./pages/services/CetakUndangan";
+import CetakLabelUndangan from "./pages/services/CetakLabelUndangan";
+import CetakSticker from "./pages/services/CetakSticker";
+import CetakAmplop from "./pages/services/CetakAmplop";
+import CetakKopSurat from "./pages/services/CetakKopSurat";
+import CetakIdCard from "./pages/services/CetakIdCard";
+import CetakAgenda from "./pages/services/CetakAgenda";
+import CetakBukuTulis from "./pages/services/CetakBukuTulis";
+import CetakNota from "./pages/services/CetakNota";
+import CetakKwitansi from "./pages/services/CetakKwitansi";
+import CetakBukuYassin from "./pages/services/CetakBukuYassin";
+import CetakBrosur from "./pages/services/CetakBrosur";
+import Jersey from "./pages/services/Jersey";
+import Playstation from "./pages/services/Playstation";
+import About from "./pages/About";
+import Contacts from "./pages/Contacts";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import { dataApp, dataPembayaran, dataLayanan } from "./constants/Data";
 
 function App() {
-  const produk = "https://olshopin.com/t/hanamiprinting";
-  const whatsapp = "https://wa.me/message/DLRPWPFGCTXOD1";
-  const lokasi = "https://maps.app.goo.gl/9yvJHcHYZRYbYBJn9";
-  const facebook = "http://www.facebook.com/hanamiprinting";
-  const instagram = "http://www.instagram.com/hanamiprinting.id";
-  const tiktok = "http://www.tiktok.com/@hanamiprinting.id";
-
   return (
-    <section className="mx-auto scale-85 md:w-6/12 flex flex-col gap-5 justify-center items-center h-full overflow-auto p-5 bg-white/50 shadow-2xl rounded-3xl">
-      <img
-        src={icon3}
-        alt="Hanami Printing"
-        className="w-35 rounded-xl shadow-xl"
-      />
-      <div className="flex flex-col justify-center items-center cursor-default">
-        <h1 className="font-bold m-0 text-orange-500 text-4xl">
-          HANAMI PRINTING
-        </h1>
-        <span>Melayani segala kebutuhan cetakan Anda!</span>
-      </div>
-      <div className="my-5 w-full flex justify-evenly items-center">
-        <a
-          href={produk}
-          target="_blank"
-          className="bi bi-boxes flex justify-center items-center w-25 h-25 text-5xl rounded-xl shadow-md bg-white hover:bg-orange-300 transition-all duration-300 hover:scale-120 cursor-pointer text-orange-300 hover:text-white"
-          title="Produk"
-        ></a>
-        <a
-          href={whatsapp}
-          target="_blank"
-          className="bi bi-whatsapp flex justify-center items-center w-25 h-25 text-5xl rounded-xl shadow-md bg-white hover:bg-orange-300 transition-all duration-300 hover:scale-120 cursor-pointer text-orange-300 hover:text-white"
-          title="WhatsApp"
-        ></a>
-        <a
-          href={lokasi}
-          target="_blank"
-          className="bi bi-geo-alt-fill flex justify-center items-center w-25 h-25 text-5xl rounded-xl shadow-md bg-white hover:bg-orange-300 transition-all duration-300 hover:scale-120 cursor-pointer text-orange-300 hover:text-white"
-          title="Lokasi"
-        ></a>
-      </div>
-      <div className="w-full flex flex-col justify-center items-center cursor-default">
-        <h1 className="font-bold mb-1 text-orange-500">Ikuti Toko Kami :</h1>
-        <div className="mx-auto flex justify-center items-center gap-3">
-          <a
-            href={instagram}
-            target="_blank"
-            className="w-10 h-10 bg-white shadow-md rounded-full flex justify-center items-center transition-all duration-300 hover:scale-120"
-            title="Instagram"
-          >
-            <img src={instagramIcon} alt="Instagram" className="w-5" />
-          </a>
-          <a
-            href={facebook}
-            target="_blank"
-            className="w-10 h-10 bg-white shadow-md rounded-full flex justify-center items-center transition-all duration-300 hover:scale-120"
-            title="Facebook"
-          >
-            <img src={facebookIcon} alt="Facebook" className="w-5" />
-          </a>
-          <a
-            href={tiktok}
-            target="_blank"
-            className="w-10 h-10 bg-white shadow-md rounded-full flex justify-center items-center transition-all duration-300 hover:scale-120"
-            title="Tiktok"
-          >
-            <img src={tiktokIcon} alt="Tiktok" className="w-5" />
-          </a>
-        </div>
-      </div>
-      <div className="w-full flex flex-col justify-center items-center cursor-default">
-        <h1 className="font-bold mb-1 text-orange-500">Channel Pembayaran :</h1>
-        <div className="mx-auto flex flex-wrap justify-center items-center gap-1 cursor-pointer">
-          <div
-            className="h-8 bg-white shadow-md rounded-full p-2 transition-all duration-300 hover:scale-120"
-            title="Dana - 0895708460123"
-          >
-            <img src={danaLogo} alt="Dana" className="h-full" />
-          </div>
-          <div
-            className="h-8 bg-white shadow-md rounded-full p-2 transition-all duration-300 hover:scale-120"
-            title="OVO - 0895708460123"
-          >
-            <img src={ovoLogo} alt="OVO" className="h-full" />
-          </div>
-          <div
-            className="h-8 bg-white shadow-md rounded-full p-2 transition-all duration-300 hover:scale-120"
-            title="Gopay - 0895708460123"
-          >
-            <img src={gopayLogo} alt="Gopay" className="h-full" />
-          </div>
-          <div
-            className="h-8 bg-white shadow-md rounded-full p-2 transition-all duration-300 hover:scale-120"
-            title="ShopeePay - 0895708460123"
-          >
-            <img src={shopeePayLogo} alt="ShopeePay" className="h-full" />
-          </div>
-          <div
-            className="h-8 bg-white shadow-md rounded-full p-2 transition-all duration-300 hover:scale-120"
-            title="BCA - 7975625991"
-          >
-            <img src={bcaLogo} alt="BCA" className="h-full" />
-          </div>
-          <div
-            className="h-8 bg-white shadow-md rounded-full p-2 transition-all duration-300 hover:scale-120"
-            title="Muamalat - 8110077620"
-          >
-            <img src={muamalatLogo} alt="Muamalat" className="h-full" />
-          </div>
-          <div
-            className="h-8 bg-white shadow-md rounded-full p-2 transition-all duration-300 hover:scale-120"
-            title="Sea Bank - 901849225983"
-          >
-            <img src={seaBankLogo} alt="Sea Bank" className="h-full" />
-          </div>
-          <div
-            className="h-8 bg-white shadow-md rounded-full p-2 transition-all duration-300 hover:scale-120"
-            title="Allo Bank - 0895708460123"
-          >
-            <img src={alloBankLogo} alt="Allo Bank" className="h-full" />
-          </div>
-        </div>
-      </div>
-      {/* <div className="flex justify-between items-start w-full">
-      </div> */}
-    </section>
+    <BrowserRouter className="scroll-smooth">
+      <Header dataApp={dataApp} />
+      <Routes>
+        <Route path={"/"} element={<Home dataApp={dataApp} dataPembayaran={dataPembayaran} dataLayanan={dataLayanan} />}  />
+        <Route path={"/layanan"} element={<Services dataLayanan={dataLayanan} />}  />
+        <Route path={"/layanan/fotocopy"} element={<Fotocopy dataApp={dataApp} />}  />
+        <Route path={"/layanan/jilid"} element={<Jilid dataApp={dataApp} />}  />
+        <Route path={"/layanan/laminating"} element={<Laminating dataApp={dataApp} />}  />
+        <Route path={"/layanan/cetak-dokumen"} element={<CetakDokumen dataApp={dataApp} />}  />
+        <Route path={"/layanan/cetak-foto-passphoto"} element={<CetakFotoPassphoto dataApp={dataApp} />}  />
+        <Route path={"/layanan/cetak-undangan"} element={<CetakUndangan dataApp={dataApp} />}  />
+        <Route path={"/layanan/cetak-label-undangan"} element={<CetakLabelUndangan dataApp={dataApp} />}  />
+        <Route path={"/layanan/cetak-sticker"} element={<CetakSticker dataApp={dataApp} />}  />
+        <Route path={"/layanan/cetak-amplop"} element={<CetakAmplop dataApp={dataApp} />}  />
+        <Route path={"/layanan/cetak-kop-surat"} element={<CetakKopSurat dataApp={dataApp} />}  />
+        <Route path={"/layanan/cetak-id-card"} element={<CetakIdCard dataApp={dataApp} />}  />
+        <Route path={"/layanan/cetak-agenda"} element={<CetakAgenda dataApp={dataApp} />}  />
+        <Route path={"/layanan/cetak-buku-tulis"} element={<CetakBukuTulis dataApp={dataApp} />}  />
+        <Route path={"/layanan/cetak-nota"} element={<CetakNota dataApp={dataApp} />}  />
+        <Route path={"/layanan/cetak-kwitansi"} element={<CetakKwitansi dataApp={dataApp} />}  />
+        <Route path={"/layanan/cetak-buku-yassin"} element={<CetakBukuYassin dataApp={dataApp} />}  />
+        <Route path={"/layanan/cetak-brosur-pamflet-poster-menu"} element={<CetakBrosur dataApp={dataApp} />}  />
+        <Route path={"/layanan/kostum-jersey"} element={<Jersey dataApp={dataApp} />}  />
+        <Route path={"/layanan/playstation"} element={<Playstation dataApp={dataApp} />}  />
+        <Route path={"/tentang-kami"} element={<About dataApp={dataApp} />}  />
+        <Route path={"/kontak"} element={<Contacts dataApp={dataApp} />}  />
+      </Routes>
+      <Footer dataApp={dataApp} dataLayanan={dataLayanan} dataPembayaran={dataPembayaran} />
+    </BrowserRouter>
   );
 }
 
-export default App
+export default App;
