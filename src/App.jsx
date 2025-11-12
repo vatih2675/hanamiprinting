@@ -35,24 +35,24 @@ function App() {
         <Route path={"/"} element={<Home dataApp={dataApp} dataPembayaran={dataPembayaran} dataLayanan={dataLayanan} />}  />
         <Route path={"/layanan"} element={<Services dataLayanan={dataLayanan} />}  />
         <Route path={"/layanan-fotocopy"} element={<Fotocopy dataApp={dataApp} />}  />
-        <Route path={"/layanan-jilid"} element={<Jilid dataApp={dataApp} />}  />
-        <Route path={"/layanan-laminating"} element={<Laminating dataApp={dataApp} />}  />
-        <Route path={"/layanan-cetak-dokumen"} element={<CetakDokumen dataApp={dataApp} />}  />
-        <Route path={"/layanan-cetak-foto-passphoto"} element={<CetakFotoPassphoto dataApp={dataApp} />}  />
-        <Route path={"/layanan-cetak-undangan"} element={<CetakUndangan dataApp={dataApp} />}  />
-        <Route path={"/layanan-cetak-label-undangan"} element={<CetakLabelUndangan dataApp={dataApp} />}  />
-        <Route path={"/layanan-cetak-sticker"} element={<CetakSticker dataApp={dataApp} />}  />
-        <Route path={"/layanan-cetak-amplop"} element={<CetakAmplop dataApp={dataApp} />}  />
-        <Route path={"/layanan-cetak-kop-surat"} element={<CetakKopSurat dataApp={dataApp} />}  />
-        <Route path={"/layanan-cetak-id-card"} element={<CetakIdCard dataApp={dataApp} />}  />
-        <Route path={"/layanan-cetak-agenda"} element={<CetakAgenda dataApp={dataApp} />}  />
-        <Route path={"/layanan-cetak-buku-tulis"} element={<CetakBukuTulis dataApp={dataApp} />}  />
-        <Route path={"/layanan-cetak-nota"} element={<CetakNota dataApp={dataApp} />}  />
-        <Route path={"/layanan-cetak-kwitansi"} element={<CetakKwitansi dataApp={dataApp} />}  />
-        <Route path={"/layanan-cetak-buku-yassin"} element={<CetakBukuYassin dataApp={dataApp} />}  />
-        <Route path={"/layanan-cetak-brosur-pamflet-poster-menu"} element={<CetakBrosur dataApp={dataApp} />}  />
-        <Route path={"/layanan-kostum-jersey"} element={<Jersey dataApp={dataApp} />}  />
-        <Route path={"/layanan-playstation"} element={<Playstation dataApp={dataApp} />}  />
+        <Route path={"/layanan/jilid"} element={<Jilid dataApp={dataApp} />}  />
+        <Route path={"/layanan/laminating"} element={<Laminating dataApp={dataApp} />}  />
+        <Route path={"/layanan/cetak-dokumen"} element={<CetakDokumen dataApp={dataApp} />}  />
+        <Route path={"/layanan/cetak-foto-passphoto"} element={<CetakFotoPassphoto dataApp={dataApp} />}  />
+        <Route path={"/layanan/cetak-undangan"} element={<CetakUndangan dataApp={dataApp} />}  />
+        <Route path={"/layanan/cetak-label-undangan"} element={<CetakLabelUndangan dataApp={dataApp} />}  />
+        <Route path={"/layanan/cetak-sticker"} element={<CetakSticker dataApp={dataApp} />}  />
+        <Route path={"/layanan/cetak-amplop"} element={<CetakAmplop dataApp={dataApp} />}  />
+        <Route path={"/layanan/cetak-kop-surat"} element={<CetakKopSurat dataApp={dataApp} />}  />
+        <Route path={"/layanan/cetak-id-card"} element={<CetakIdCard dataApp={dataApp} />}  />
+        <Route path={"/layanan/cetak-agenda"} element={<CetakAgenda dataApp={dataApp} />}  />
+        <Route path={"/layanan/cetak-buku-tulis"} element={<CetakBukuTulis dataApp={dataApp} />}  />
+        <Route path={"/layanan/cetak-nota"} element={<CetakNota dataApp={dataApp} />}  />
+        <Route path={"/layanan/cetak-kwitansi"} element={<CetakKwitansi dataApp={dataApp} />}  />
+        <Route path={"/layanan/cetak-buku-yassin"} element={<CetakBukuYassin dataApp={dataApp} />}  />
+        <Route path={"/layanan/cetak-brosur-pamflet-poster-menu"} element={<CetakBrosur dataApp={dataApp} />}  />
+        <Route path={"/layanan/kostum-jersey"} element={<Jersey dataApp={dataApp} />}  />
+        <Route path={"/layanan/playstation"} element={<Playstation dataApp={dataApp} />}  />
         <Route path={"/tentang-kami"} element={<About dataApp={dataApp} />}  />
         <Route path={"/kontak"} element={<Contacts dataApp={dataApp} />}  />
       </Routes>
