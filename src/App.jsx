@@ -34,7 +34,7 @@ function App() {
       <Routes>
         <Route path={"/"} element={<Home dataApp={dataApp} dataPembayaran={dataPembayaran} dataLayanan={dataLayanan} />}  />
         <Route path={"/layanan"} element={<Services dataLayanan={dataLayanan} />}  />
-        <Route path={"/layanan-fotocopy"} element={<Fotocopy dataApp={dataApp} />}  />
+        <Route path={"/layanan/fotocopy"} element={<Fotocopy dataApp={dataApp} />}  />
         <Route path={"/layanan/jilid"} element={<Jilid dataApp={dataApp} />}  />
         <Route path={"/layanan/laminating"} element={<Laminating dataApp={dataApp} />}  />
         <Route path={"/layanan/cetak-dokumen"} element={<CetakDokumen dataApp={dataApp} />}  />
