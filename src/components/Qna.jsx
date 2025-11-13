@@ -136,29 +136,31 @@ export default function Footer({dataApp, dataLayanan, dataPembayaran}) {
                     <h1 className="w-full font-bold text-lg mt-3">Berikut adalah produk & layanan yang kami sediakan</h1>
                     {/* <h3 className="w-full font-bold text-lg">Produk</h3> */}
                     <div className="flex justify-start items-start gap-5">
-                    <ul className="w-3/12 text-justify mb-3 list-disc ms-5">
-                        <li>Fotocopy</li>
-                        <li>Jilid</li>
-                        <li>Laminating</li>
-                        <li>Cetak Dokumen<span className="text-red-500">*</span></li>
-                        <li>Cetak Foto & Passphoto<span className="text-red-500">*</span></li>
-                        <li>Cetak Undangan<span className="text-red-500">*</span></li>
-                        <li>Cetak Label Undangan<span className="text-red-500">*</span></li>
-                        <li>Cetak Sticker<span className="text-red-500">*</span></li>
-                        <li>Cetak Amplop<span className="text-red-500">*</span></li>
-                    </ul>
-                    <ul className="w-9/12 text-justify mb-3 list-disc ms-5">
-                        <li>Cetak Kop Surat<span className="text-red-500">*</span></li>
-                        <li>Cetak Agenda<span className="text-red-500">*</span></li>
-                        <li>Cetak Buku Tulis<span className="text-red-500">*</span></li>
-                        <li>Cetak Nota<span className="text-red-500">*</span></li>
-                        <li>Cetak Kwitansi<span className="text-red-500">*</span></li>
-                        <li>Cetak Buku Yassin<span className="text-red-500">*</span></li>
-                        <li>Cetak Brosur / Pamflet / Poster / Buku Menu<span className="text-red-500">*</span></li>
-                        <li>Jersey Kostum<span className="text-red-500">*</span></li>
-                        <li>Rental Playstation</li>
-                    </ul>
+                        <ul className="w-3/12 text-justify mb-3 list-disc ms-5">
+                            <li>Fotocopy</li>
+                            <li>Jilid</li>
+                            <li>Laminating</li>
+                            <li>Cetak Dokumen<span className="text-red-500">*</span></li>
+                            <li>Cetak Foto & Passphoto<span className="text-red-500">*</span></li>
+                            <li>Cetak Undangan<span className="text-red-500">*</span></li>
+                            <li>Cetak Label Undangan<span className="text-red-500">*</span></li>
+                            <li>Cetak Sticker<span className="text-red-500">*</span></li>
+                            <li>Cetak Amplop<span className="text-red-500">*</span></li>
+                            <li>Cetak Kop Surat<span className="text-red-500">*</span></li>
+                        </ul>
+                        <ul className="w-9/12 text-justify mb-3 list-disc ms-5">
+                            <li>Cetak ID Card<span className="text-red-500">*</span></li>
+                            <li>Cetak Agenda<span className="text-red-500">*</span></li>
+                            <li>Cetak Buku Tulis<span className="text-red-500">*</span></li>
+                            <li>Cetak Nota<span className="text-red-500">*</span></li>
+                            <li>Cetak Kwitansi<span className="text-red-500">*</span></li>
+                            <li>Cetak Buku Yassin<span className="text-red-500">*</span></li>
+                            <li>Cetak Brosur / Pamflet / Poster / Buku Menu<span className="text-red-500">*</span></li>
+                            <li>Jersey Kostum<span className="text-red-500">*</span></li>
+                            <li>Rental Playstation</li>
+                        </ul>
                     </div>
+                    <p className="italic"><span className="text-red-500">*</span>) <span className="text-xs">Dapat dipesan secara online</span></p>
                 </div>
             </div>
             <div className="w-full border-b border-gray-300">
