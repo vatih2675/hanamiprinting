@@ -85,7 +85,7 @@ export default function Footer({dataApp,dataLayanan, dataPembayaran}) {
           </div>
           <iframe
             src={dataApp.links.geo}
-            className="w-full h-60 mt-10 rounded-xl shadow-black/20 shadow-xl"
+            className="w-full h-80 mt-10 rounded-xl shadow-black/20 shadow-xl"
             // allowfullscreen=""
             loading="lazy"
             // referrerpolicy="no-referrer-when-downgrade"
