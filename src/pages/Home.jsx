@@ -40,7 +40,7 @@ export default function Home({dataApp, dataPembayaran, dataLayanan}) {
       <div className="w-full px-20 py-10 bg-orange-700 flex justify-center items-start gap-5 shadow-black/20 shadow-lg cursor-default">
         <div className="w-3/12 p-5 bg-white/25 text-white rounded-xl shadow-black/30 shadow-md flex justify-center items-start gap-3 hover:scale-110 transition-all duration-300">
           <i className="bi-whatsapp text-xl"></i>
-          <div className="w-full h-30">
+          <div className="w-full h-40">
             <h1 className="font-bold text-lg">Pesan Percetakan Online</h1>
             <p>
               Pemesanan dapat melalui WhatsApp kami. Silahkan klik tombol
@@ -50,14 +50,14 @@ export default function Home({dataApp, dataPembayaran, dataLayanan}) {
         </div>
         <div className="w-3/12 p-5 bg-white/25 text-white rounded-xl shadow-black/30 shadow-md flex justify-center items-start gap-3 hover:scale-110 transition-all duration-300">
           <i className="bi-person-fill-check text-xl"></i>
-          <div className="w-full h-30">
+          <div className="w-full h-40">
             <h1 className="font-bold text-lg">Profesional</h1>
             <p>Pemesanan akan ditangani secara profesional.</p>
           </div>
         </div>
         <div className="w-3/12 p-5 bg-white/25 text-white rounded-xl shadow-black/30 shadow-md flex justify-center items-start gap-3 hover:scale-110 transition-all duration-300">
           <i className="bi-hourglass-split text-xl"></i>
-          <div className="w-full h-30">
+          <div className="w-full h-40">
             <h1 className="font-bold text-lg">Proses Cepat</h1>
             <p>
               Proses pesanan lebih cepat dengan hasil maksimal hingga sampai ke
@@ -67,7 +67,7 @@ export default function Home({dataApp, dataPembayaran, dataLayanan}) {
         </div>
         <div className="w-3/12 p-5 bg-white/25 text-white rounded-xl shadow-black/30 shadow-md flex justify-center items-start gap-3 hover:scale-110 transition-all duration-300">
           <i className="bi-journal-bookmark-fill text-xl"></i>
-          <div className="w-full h-30">
+          <div className="w-full h-40">
             <h1 className="font-bold text-lg">Bergaransi</h1>
             <p>
               Hasil cetakan berkualitas dengan menggunakan bahan terbaik dan
@@ -81,23 +81,29 @@ export default function Home({dataApp, dataPembayaran, dataLayanan}) {
           LAYANAN KAMI
         </h1>
         <div className="w-full flex flex-wrap justify-center items-start">
-          {dataLayanan.map(({judul, link, gambar, bintang, keterangan, online}, index) => (
-            <NavLink to={`/layanan/${link}`} key={index} className="w-3/12 p-5 cursor-pointer hover:scale-105 transition-all duration-300">
-              <img
-                src={`./layanan/${gambar}`}
-                alt={judul}
-                className="w-full rounded-xl shadow-black/20 shadow-md mb-2"
-              />
-              <h1 className="text-center font-bold text-xl">{judul}</h1>
-              <div className="w-full flex justify-center items-center">
-                <i className="bi-star-fill text-lg text-orange-400"></i>
-                <i className="bi-star-fill text-lg text-orange-400"></i>
-                <i className="bi-star-fill text-lg text-orange-400"></i>
-                <i className="bi-star-fill text-lg text-orange-400"></i>
-                <i className="bi-star-fill text-lg text-orange-400"></i>
-              </div>
-            </NavLink>
-          ))}
+          {dataLayanan.map(
+            ({ judul, link, gambar, bintang, keterangan, online }, index) => (
+              <NavLink
+                to={`/layanan/${link}`}
+                key={index}
+                className="w-3/12 p-5 cursor-pointer hover:scale-105 transition-all duration-300"
+              >
+                <img
+                  src={`./layanan/${gambar}`}
+                  alt={judul}
+                  className="w-full rounded-xl shadow-black/20 shadow-md mb-2"
+                />
+                <h1 className="text-center font-bold text-xl">{judul}</h1>
+                <div className="w-full flex justify-center items-center">
+                  <i className="bi-star-fill text-lg text-orange-400"></i>
+                  <i className="bi-star-fill text-lg text-orange-400"></i>
+                  <i className="bi-star-fill text-lg text-orange-400"></i>
+                  <i className="bi-star-fill text-lg text-orange-400"></i>
+                  <i className="bi-star-fill text-lg text-orange-400"></i>
+                </div>
+              </NavLink>
+            )
+          )}
         </div>
         <NavLink
           to="/layanan"
@@ -126,7 +132,9 @@ export default function Home({dataApp, dataPembayaran, dataLayanan}) {
       <div className="w-full px-20 py-15 bg-orange-100">
         <div className="flex justify-center items-start gap-5">
           <div className="w-3/12 h-70 p-5 bg-white rounded-xl shadow-black/20 shadow-md flex flex-col justify-between items-center">
-            <h1 className="text-center font-bold text-orange-500 text-xl mb-2">Kwitansi & Nota</h1>
+            <h1 className="text-center font-bold text-orange-500 text-xl mb-2">
+              Kwitansi & Nota
+            </h1>
             <p className="mb-3 text-center">
               Kami menyediakan jasa cetak kwitansi & nota secara kostum sesuai
               keinginan Anda. Menggunakan kertas premium dan hasil cetak yang
@@ -142,8 +150,14 @@ export default function Home({dataApp, dataPembayaran, dataLayanan}) {
             </a>
           </div>
           <div className="w-3/12 h-70 p-5 bg-white rounded-xl shadow-black/20 shadow-md flex flex-col justify-between items-center">
-            <h1 className="text-center font-bold text-orange-500 text-xl mb-2">Brosur & Pamflet</h1>
-            <p className="mb-3 text-center">Tunjukan produk dan layanan usaha Anda dalam bentuk brosur, pamflet, kartu nama dan serahkan jasa cetaknya kepada Hanami Printing.</p>
+            <h1 className="text-center font-bold text-orange-500 text-xl mb-2">
+              Brosur & Pamflet
+            </h1>
+            <p className="mb-3 text-center">
+              Tunjukan produk dan layanan usaha Anda dalam bentuk brosur,
+              pamflet, kartu nama dan serahkan jasa cetaknya kepada Hanami
+              Printing.
+            </p>
             <a
               href={dataApp.links.whatsapp}
               target="_blank"
@@ -154,8 +168,14 @@ export default function Home({dataApp, dataPembayaran, dataLayanan}) {
             </a>
           </div>
           <div className="w-3/12 h-70 p-5 bg-white rounded-xl shadow-black/20 shadow-md flex flex-col justify-between items-center">
-            <h1 className="text-center font-bold text-orange-500 text-xl mb-2">Buku Menu</h1>
-            <p className="mb-3 text-center">Buat buku menu resto Anda lebih menarik lagi dengan jasa cetak buku menu dari Kami, menjamin hasil cetak berkualitas dengan harga terjangkau.</p>
+            <h1 className="text-center font-bold text-orange-500 text-xl mb-2">
+              Buku Menu
+            </h1>
+            <p className="mb-3 text-center">
+              Buat buku menu resto Anda lebih menarik lagi dengan jasa cetak
+              buku menu dari Kami, menjamin hasil cetak berkualitas dengan harga
+              terjangkau.
+            </p>
             <a
               href={dataApp.links.whatsapp}
               target="_blank"
@@ -167,7 +187,11 @@ export default function Home({dataApp, dataPembayaran, dataLayanan}) {
           </div>
         </div>
       </div>
-      <Qna dataApp={dataApp} dataPembayaran={dataPembayaran} dataLayanan={dataLayanan} />
+      <Qna
+        dataApp={dataApp}
+        dataPembayaran={dataPembayaran}
+        dataLayanan={dataLayanan}
+      />
     </section>
   );
 }
