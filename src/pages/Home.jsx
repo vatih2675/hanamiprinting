@@ -119,12 +119,12 @@ export default function Home({dataApp, dataPembayaran, dataLayanan}) {
           <i className="bi-arrow-right ms-2"></i>
         </NavLink>
       </div>
-      <div className="w-full px-3 sm:px-20 py-3 sm:py-10 bg-gray-800 flex justify-between items-center gap-5 shadow-black/20 shadow-lg">
+      <div className="w-full px-3 sm:px-20 py-5 sm:py-10 bg-gray-800 flex justify-between items-center gap-5 shadow-black/20 shadow-lg">
         <div className="flex flex-col justify-center items-start text-white">
-          <h1 className="font-bold text-sm sm:text-4xl">
+          <h1 className="font-bold text-xs sm:text-4xl">
             Hanami Printing solusi kebutuhan cetak Anda.
           </h1>
-          <h1 className="font-bold text-sm sm:text-4xl">Punya pertanyaan?</h1>
+          <h1 className="font-bold text-xs sm:text-4xl">Punya pertanyaan?</h1>
         </div>
         <a
           href={dataApp.links.whatsapp}
