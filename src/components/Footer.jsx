@@ -3,14 +3,14 @@ import logoWhite from "/logo-white.png";
 
 export default function Footer({dataApp,dataLayanan, dataPembayaran}) {
   return (
-    <footer className="w-full text-white bg-orange-700 px-0 sm:px-20 py-0 sm:py-10">
-      <div className="w-full flex flex-wrap sm:flex-nowrap justify-center items-start sm:gap-15 mb-10">
-        <div className="sm:w-3/12 w-6/12 py-3 ps-3 pe-5 sm:p-0">
+    <footer className="w-full text-white bg-orange-700 px-3 sm:px-20 py-3 sm:py-10">
+      <div className="w-full flex flex-col sm:flex-row justify-center items-start gap-5 sm:gap-15 mb-10">
+        <div className="sm:w-3/12 w-full">
           <img src={logoWhite} alt="Hanami Printing" className="w-full" />
-          <p className="w-full text-xs text-justify cursor-default">
+          <p className="w-full text-xs text-center sm:text-justify cursor-default">
             {dataApp.alamat}
           </p>
-          <div className="flex flex-col justify-start items-start my-5 sm:my-10">
+          <div className="flex flex-col justify-center sm:justify-start items-center sm:items-start my-5 sm:my-10">
             <a
               href={dataApp.links.whatsapp}
               target="_blank"
@@ -40,7 +40,7 @@ export default function Footer({dataApp,dataLayanan, dataPembayaran}) {
               </span>
             </a>
           </div>
-          <div className="flex flex-col justify-start items-start">
+          <div className="flex flex-col justify-center sm:justify-start items-center sm:items-start">
             <h1 className="font-bold sm:text-lg text-base cursor-default">
               Ikuti Toko Kami :
             </h1>
@@ -69,11 +69,11 @@ export default function Footer({dataApp,dataLayanan, dataPembayaran}) {
             </div>
           </div>
         </div>
-        <div className="sm:w-3/12 w-6/12 py-3 pe-3 ps-5 sm:p-0">
+        <div className="sm:w-3/12 w-full sm:text-start text-center py-3 sm:py-0 sm:border-0 border-y border-orange-600 ">
           <h1 className="mb-2 sm:mb-5 font-bold text-lg sm:text-2xl">
             LAYANAN
           </h1>
-          <ul className="w-full list-disc ms-5 sm:text-base text-xs">
+          <ul className="w-full list-none sm:list-disc ms-0 sm:ms-5 sm:text-base text-xs">
             {dataLayanan.map(
               ({ judul, link, gambar, bintang, keterangan, online }, index) => (
                 <li
@@ -88,7 +88,7 @@ export default function Footer({dataApp,dataLayanan, dataPembayaran}) {
             )}
           </ul>
         </div>
-        <div className="sm:w-6/12 w-full py-3 sm:px-0 sm:py-0 px-3 sm:p-0 cursor-default sm:mt-0 mt-5">
+        <div className="sm:w-6/12 w-full cursor-default">
           <h1 className="mb-2 sm:mb-5 font-bold text-lg sm:text-2xl sm:text-start text-center w-full">
             METODE PEMBAYARAN
           </h1>
