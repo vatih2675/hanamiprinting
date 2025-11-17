@@ -7,22 +7,22 @@ import { NavLink } from "react-router-dom";
 export default function Home({dataApp, dataPembayaran, dataLayanan}) {
   return (
     <section className="w-full">
-      <div className="w-full p-20 flex justify-center items-center gap-10 cursor-default">
-        <div className="w-6/12 flex justify-center items-center">
+      <div className="w-full p-3 sm:p-20 flex flex-col sm:flex-row justify-center items-center gap-10 cursor-default">
+        <div className="w-full sm:w-6/12 flex justify-center items-center">
           <img
             src={digitalPrinting}
             alt="Hanami Printing"
-            className="w-[90%]"
+            className="w-[50%] sm:w-[90%]"
           />
         </div>
-        <div className="w-6/12 flex flex-col justify-center items-start gap-5">
-          <h3 className="w-full text-orange-500 font-bold text-2xl">
+        <div className="w-full sm:w-6/12 flex flex-col justify-center items-start gap-1 sm:gap-5">
+          <h3 className="w-full text-center sm:text-start text-orange-500 font-bold text-xl">
             HANAMI PRINTING
           </h3>
-          <h1 className="w-full font-bold text-6xl">
+          <h1 className="w-full text-center sm:text-start font-bold text-2xl sm:text-6xl">
             Tempat Percetakan Murah Di Gorontalo
           </h1>
-          <p className="w-full text-justify">
+          <p className="w-full text-sm sm:text-base text-center sm:text-justify">
             Kami menerima jasa percetakan digital untuk pembuatan dokumen,
             sticky notes, brosur marketing, media promosi, buku tahunan dan lain
             sebagainya dengan harga terjangkau dan kualitas cetak terbaik.
@@ -30,46 +30,50 @@ export default function Home({dataApp, dataPembayaran, dataLayanan}) {
           <a
             href={dataApp.links.whatsapp}
             target="_blank"
-            className="flex justify-center items-center gap-2 rounded-md bg-orange-600 px-5 py-3 text-white text-lg shadow-black/30 shadow-md hover:bg-orange-500 transition-all duration-300"
+            className="flex justify-center items-center gap-2 rounded-md bg-orange-600 px-2 sm:px-5 py-1 sm:py-3 text-white text-sm sm:text-lg shadow-black/30 shadow-md hover:bg-orange-500 transition-all duration-300 mx-auto sm:me-auto my-3 sm:my-0"
           >
             <i className="bi-whatsapp"></i>
             <span>Hubungi Kami</span>
           </a>
         </div>
       </div>
-      <div className="w-full px-20 py-10 bg-orange-700 flex justify-center items-start gap-5 shadow-black/20 shadow-lg cursor-default">
-        <div className="w-3/12 p-5 bg-white/25 text-white rounded-xl shadow-black/30 shadow-md flex justify-center items-start gap-3 hover:scale-110 transition-all duration-300">
-          <i className="bi-whatsapp text-xl"></i>
-          <div className="w-full h-40">
-            <h1 className="font-bold text-lg">Pesan Percetakan Online</h1>
-            <p>
+      <div className="w-full px-3 sm:px-20 py-3 sm:py-10 bg-orange-700 grid sm:grid-cols-4 grid-cols-2 gap-3 sm:gap-5 shadow-black/20 shadow-lg cursor-default">
+        <div className="w-full p-3 sm:p-5 bg-white/25 text-white rounded-xl shadow-black/30 shadow-md flex justify-center items-start gap-3 hover:scale-110 transition-all duration-300">
+          <i className="bi-whatsapp text-base sm:text-xl"></i>
+          <div className="w-full h-30 sm:h-40">
+            <h1 className="font-bold text-base sm:text-lg">
+              Pesan Percetakan Online
+            </h1>
+            <p className="sm:text-base text-xs">
               Pemesanan dapat melalui WhatsApp kami. Silahkan klik tombol
               "Hubungi Kami".
             </p>
           </div>
         </div>
-        <div className="w-3/12 p-5 bg-white/25 text-white rounded-xl shadow-black/30 shadow-md flex justify-center items-start gap-3 hover:scale-110 transition-all duration-300">
-          <i className="bi-person-fill-check text-xl"></i>
-          <div className="w-full h-40">
-            <h1 className="font-bold text-lg">Profesional</h1>
-            <p>Pemesanan akan ditangani secara profesional.</p>
+        <div className="w-full p-3 sm:p-5 bg-white/25 text-white rounded-xl shadow-black/30 shadow-md flex justify-center items-start gap-3 hover:scale-110 transition-all duration-300">
+          <i className="bi-person-fill-check text-base sm:text-xl"></i>
+          <div className="w-full h-30 sm:h-40">
+            <h1 className="font-bold text-base sm:text-lg">Profesional</h1>
+            <p className="sm:text-base text-xs">
+              Pemesanan akan ditangani secara profesional.
+            </p>
           </div>
         </div>
-        <div className="w-3/12 p-5 bg-white/25 text-white rounded-xl shadow-black/30 shadow-md flex justify-center items-start gap-3 hover:scale-110 transition-all duration-300">
-          <i className="bi-hourglass-split text-xl"></i>
-          <div className="w-full h-40">
-            <h1 className="font-bold text-lg">Proses Cepat</h1>
-            <p>
+        <div className="w-full p-3 sm:p-5 bg-white/25 text-white rounded-xl shadow-black/30 shadow-md flex justify-center items-start gap-3 hover:scale-110 transition-all duration-300">
+          <i className="bi-hourglass-split text-base sm:text-xl"></i>
+          <div className="w-full h-30 sm:h-40">
+            <h1 className="font-bold text-base sm:text-lg">Proses Cepat</h1>
+            <p className="sm:text-base text-xs">
               Proses pesanan lebih cepat dengan hasil maksimal hingga sampai ke
               tangan Anda.
             </p>
           </div>
         </div>
-        <div className="w-3/12 p-5 bg-white/25 text-white rounded-xl shadow-black/30 shadow-md flex justify-center items-start gap-3 hover:scale-110 transition-all duration-300">
-          <i className="bi-journal-bookmark-fill text-xl"></i>
-          <div className="w-full h-40">
-            <h1 className="font-bold text-lg">Bergaransi</h1>
-            <p>
+        <div className="w-full p-3 sm:p-5 bg-white/25 text-white rounded-xl shadow-black/30 shadow-md flex justify-center items-start gap-3 hover:scale-110 transition-all duration-300">
+          <i className="bi-journal-bookmark-fill text-base sm:text-xl"></i>
+          <div className="w-full h-30 sm:h-40">
+            <h1 className="font-bold text-base sm:text-lg">Bergaransi</h1>
+            <p className="sm:text-base text-xs">
               Hasil cetakan berkualitas dengan menggunakan bahan terbaik dan
               mesin canggih.
             </p>
