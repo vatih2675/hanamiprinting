@@ -137,7 +137,7 @@ export default function Home({dataApp, dataPembayaran, dataLayanan}) {
       </div>
       <div className="w-full px-3 sm:px-20 py-5 sm:py-15 bg-orange-100">
         <div className="grid grid-cols-3 gap-3 sm:gap-5">
-          <div className="w-full sm:w-3/12 h-55 sm:h-70 p-3 sm:p-5 bg-white rounded-xl shadow-black/20 shadow-md flex flex-col justify-between items-center">
+          <div className="w-full sm:w-3/12 h-70 sm:h-70 p-3 sm:p-5 bg-white rounded-xl shadow-black/20 shadow-md flex flex-col justify-between items-center">
             <h1 className="text-center font-bold text-orange-500 text-sm sm:text-xl mb-1 sm:mb-2">
               Kwitansi & Nota
             </h1>
@@ -155,7 +155,7 @@ export default function Home({dataApp, dataPembayaran, dataLayanan}) {
               <span>Pesan Sekarang</span>
             </a>
           </div>
-          <div className="w-full sm:w-3/12 h-55 sm:h-70 p-3 sm:p-5 bg-white rounded-xl shadow-black/20 shadow-md flex flex-col justify-between items-center">
+          <div className="w-full sm:w-3/12 h-70 sm:h-70 p-3 sm:p-5 bg-white rounded-xl shadow-black/20 shadow-md flex flex-col justify-between items-center">
             <h1 className="text-center font-bold text-orange-500 text-sm sm:text-xl mb-1 sm:mb-2">
               Brosur & Pamflet
             </h1>
@@ -173,7 +173,7 @@ export default function Home({dataApp, dataPembayaran, dataLayanan}) {
               <span>Pesan Sekarang</span>
             </a>
           </div>
-          <div className="w-full sm:w-3/12 h-55 sm:h-70 p-3 sm:p-5 bg-white rounded-xl shadow-black/20 shadow-md flex flex-col justify-between items-center">
+          <div className="w-full sm:w-3/12 h-70 sm:h-70 p-3 sm:p-5 bg-white rounded-xl shadow-black/20 shadow-md flex flex-col justify-between items-center">
             <h1 className="text-center font-bold text-orange-500 text-sm sm:text-xl mb-1 sm:mb-2">
               Buku Menu
             </h1>
