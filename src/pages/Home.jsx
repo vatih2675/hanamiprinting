@@ -40,8 +40,8 @@ export default function Home({dataApp, dataPembayaran, dataLayanan}) {
       <div className="w-full px-3 sm:px-20 py-3 sm:py-10 bg-orange-700 grid sm:grid-cols-4 grid-cols-2 gap-3 sm:gap-5 shadow-black/20 shadow-lg cursor-default">
         <div className="w-full p-3 sm:p-5 bg-white/25 text-white rounded-xl shadow-black/30 shadow-md flex justify-center items-start gap-3 hover:scale-110 transition-all duration-300">
           <i className="bi-whatsapp text-base sm:text-xl"></i>
-          <div className="w-full h-30 sm:h-40">
-            <h1 className="font-bold text-base sm:text-lg">
+          <div className="w-full h-35 sm:h-40">
+            <h1 className="font-bold text-sm sm:text-lg">
               Pesan Percetakan Online
             </h1>
             <p className="sm:text-base text-xs">
@@ -52,8 +52,8 @@ export default function Home({dataApp, dataPembayaran, dataLayanan}) {
         </div>
         <div className="w-full p-3 sm:p-5 bg-white/25 text-white rounded-xl shadow-black/30 shadow-md flex justify-center items-start gap-3 hover:scale-110 transition-all duration-300">
           <i className="bi-person-fill-check text-base sm:text-xl"></i>
-          <div className="w-full h-30 sm:h-40">
-            <h1 className="font-bold text-base sm:text-lg">Profesional</h1>
+          <div className="w-full h-35 sm:h-40">
+            <h1 className="font-bold text-sm sm:text-lg">Profesional</h1>
             <p className="sm:text-base text-xs">
               Pemesanan akan ditangani secara profesional.
             </p>
@@ -61,8 +61,8 @@ export default function Home({dataApp, dataPembayaran, dataLayanan}) {
         </div>
         <div className="w-full p-3 sm:p-5 bg-white/25 text-white rounded-xl shadow-black/30 shadow-md flex justify-center items-start gap-3 hover:scale-110 transition-all duration-300">
           <i className="bi-hourglass-split text-base sm:text-xl"></i>
-          <div className="w-full h-30 sm:h-40">
-            <h1 className="font-bold text-base sm:text-lg">Proses Cepat</h1>
+          <div className="w-full h-35 sm:h-40">
+            <h1 className="font-bold text-sm sm:text-lg">Proses Cepat</h1>
             <p className="sm:text-base text-xs">
               Proses pesanan lebih cepat dengan hasil maksimal hingga sampai ke
               tangan Anda.
@@ -71,8 +71,8 @@ export default function Home({dataApp, dataPembayaran, dataLayanan}) {
         </div>
         <div className="w-full p-3 sm:p-5 bg-white/25 text-white rounded-xl shadow-black/30 shadow-md flex justify-center items-start gap-3 hover:scale-110 transition-all duration-300">
           <i className="bi-journal-bookmark-fill text-base sm:text-xl"></i>
-          <div className="w-full h-30 sm:h-40">
-            <h1 className="font-bold text-base sm:text-lg">Bergaransi</h1>
+          <div className="w-full h-35 sm:h-40">
+            <h1 className="font-bold text-sm sm:text-lg">Bergaransi</h1>
             <p className="sm:text-base text-xs">
               Hasil cetakan berkualitas dengan menggunakan bahan terbaik dan
               mesin canggih.
@@ -80,8 +80,8 @@ export default function Home({dataApp, dataPembayaran, dataLayanan}) {
           </div>
         </div>
       </div>
-      <div className="w-full text-center px-20 py-15">
-        <h1 className="text-center text-4xl font-bold text-orange-500 mb-10">
+      <div className="w-full text-center px-3 sm:px-20 py-5 sm:py-15">
+        <h1 className="text-center text-xl sm:text-4xl font-bold text-orange-500 mb-3 sm:mb-10">
           LAYANAN KAMI
         </h1>
         <div className="w-full flex flex-wrap justify-center items-start">
@@ -90,20 +90,22 @@ export default function Home({dataApp, dataPembayaran, dataLayanan}) {
               <NavLink
                 to={`/layanan/${link}`}
                 key={index}
-                className="w-3/12 p-5 cursor-pointer hover:scale-105 transition-all duration-300"
+                className="w-4/12 sm:w-3/12 p-3 sm:p-5 cursor-pointer hover:scale-105 transition-all duration-300"
               >
                 <img
                   src={`./layanan/${gambar}`}
                   alt={judul}
-                  className="w-full rounded-xl shadow-black/20 shadow-md mb-2"
+                  className="w-full rounded-xl shadow-black/20 shadow-md mb-1 sm:mb-2"
                 />
-                <h1 className="text-center font-bold text-xl">{judul}</h1>
+                <h1 className="text-center font-bold text-base sm:text-xl">
+                  {judul}
+                </h1>
                 <div className="w-full flex justify-center items-center">
-                  <i className="bi-star-fill text-lg text-orange-400"></i>
-                  <i className="bi-star-fill text-lg text-orange-400"></i>
-                  <i className="bi-star-fill text-lg text-orange-400"></i>
-                  <i className="bi-star-fill text-lg text-orange-400"></i>
-                  <i className="bi-star-fill text-lg text-orange-400"></i>
+                  <i className="bi-star-fill text-xs sm:text-lg text-orange-400"></i>
+                  <i className="bi-star-fill text-xs sm:text-lg text-orange-400"></i>
+                  <i className="bi-star-fill text-xs sm:text-lg text-orange-400"></i>
+                  <i className="bi-star-fill text-xs sm:text-lg text-orange-400"></i>
+                  <i className="bi-star-fill text-xs sm:text-lg text-orange-400"></i>
                 </div>
               </NavLink>
             )
@@ -111,35 +113,35 @@ export default function Home({dataApp, dataPembayaran, dataLayanan}) {
         </div>
         <NavLink
           to="/layanan"
-          className="inline-block mt-10 rounded-md bg-orange-600 px-4 py-2 text-white text-lg shadow-black/20 shadow-md hover:bg-orange-500 transition-all duration-300"
+          className="inline-block mt-5 sm:mt-10 rounded-md bg-orange-600 px-2 sm:px-4 py-1 sm:py-2 text-white text-sm sm:text-lg shadow-black/20 shadow-md hover:bg-orange-500 transition-all duration-300"
         >
           <span>Selengkapnya</span>
           <i className="bi-arrow-right ms-2"></i>
         </NavLink>
       </div>
-      <div className="w-full px-20 py-10 bg-gray-800 flex justify-between items-center gap-5 shadow-black/20 shadow-lg">
+      <div className="w-full px-3 sm:px-20 py-3 sm:py-10 bg-gray-800 flex justify-between items-center gap-5 shadow-black/20 shadow-lg">
         <div className="flex flex-col justify-center items-start text-white">
-          <h1 className="font-bold text-4xl">
+          <h1 className="font-bold text-sm sm:text-4xl">
             Hanami Printing solusi kebutuhan cetak Anda.
           </h1>
-          <h1 className="font-bold text-4xl">Punya pertanyaan?</h1>
+          <h1 className="font-bold text-sm sm:text-4xl">Punya pertanyaan?</h1>
         </div>
         <a
           href={dataApp.links.whatsapp}
           target="_blank"
-          className="flex justify-center items-center gap-2 rounded-md bg-orange-600 px-5 py-3 text-white text-lg shadow-black/30 shadow-md hover:bg-orange-500 hover:animate-bounce transition-all duration-300"
+          className="flex justify-center items-center gap-2 rounded-md bg-orange-600 px-2 sm:px-5 py-1 sm:py-3 text-white text-xs sm:text-lg shadow-black/30 shadow-md hover:bg-orange-500 hover:animate-bounce transition-all duration-300"
         >
           <i className="bi-whatsapp"></i>
-          <span>Hubungi Kami</span>
+          <span className="inline-block">Hubungi Kami</span>
         </a>
       </div>
-      <div className="w-full px-20 py-15 bg-orange-100">
-        <div className="flex justify-center items-start gap-5">
-          <div className="w-3/12 h-70 p-5 bg-white rounded-xl shadow-black/20 shadow-md flex flex-col justify-between items-center">
-            <h1 className="text-center font-bold text-orange-500 text-xl mb-2">
+      <div className="w-full px-3 sm:px-20 py-3 sm:py-15 bg-orange-100">
+        <div className="grid grid-cols-3 gap-3 sm:gap-5">
+          <div className="w-full sm:w-3/12 h-55 sm:h-70 p-3 sm:p-5 bg-white rounded-xl shadow-black/20 shadow-md flex flex-col justify-between items-center">
+            <h1 className="text-center font-bold text-orange-500 text-sm sm:text-xl mb-1 sm:mb-2">
               Kwitansi & Nota
             </h1>
-            <p className="mb-3 text-center">
+            <p className="mb-1 sm:mb-3 text-center text-xs sm:text-base">
               Kami menyediakan jasa cetak kwitansi & nota secara kostum sesuai
               keinginan Anda. Menggunakan kertas premium dan hasil cetak yang
               prima.
@@ -147,17 +149,17 @@ export default function Home({dataApp, dataPembayaran, dataLayanan}) {
             <a
               href={dataApp.links.whatsapp}
               target="_blank"
-              className="flex justify-center items-center gap-2 rounded-md bg-orange-600 px-3 w-full py-2 text-white text-lg shadow-black/30 shadow-md hover:bg-orange-500 transition-all duration-300"
+              className="flex justify-center items-center gap-2 rounded-md bg-orange-600 px-2 sm:px-3 w-full py-1 sm:py-2 text-white text-xs sm:text-lg shadow-black/30 shadow-md hover:bg-orange-500 transition-all duration-300"
             >
               <i className="bi-whatsapp"></i>
               <span>Pesan Sekarang</span>
             </a>
           </div>
-          <div className="w-3/12 h-70 p-5 bg-white rounded-xl shadow-black/20 shadow-md flex flex-col justify-between items-center">
-            <h1 className="text-center font-bold text-orange-500 text-xl mb-2">
+          <div className="w-full sm:w-3/12 h-55 sm:h-70 p-3 sm:p-5 bg-white rounded-xl shadow-black/20 shadow-md flex flex-col justify-between items-center">
+            <h1 className="text-center font-bold text-orange-500 text-sm sm:text-xl mb-1 sm:mb-2">
               Brosur & Pamflet
             </h1>
-            <p className="mb-3 text-center">
+            <p className="mb-1 sm:mb-3 text-center text-xs sm:text-base">
               Tunjukan produk dan layanan usaha Anda dalam bentuk brosur,
               pamflet, kartu nama dan serahkan jasa cetaknya kepada Hanami
               Printing.
@@ -165,17 +167,17 @@ export default function Home({dataApp, dataPembayaran, dataLayanan}) {
             <a
               href={dataApp.links.whatsapp}
               target="_blank"
-              className="flex justify-center items-center gap-2 rounded-md bg-orange-600 px-3 w-full py-2 text-white text-lg shadow-black/30 shadow-md hover:bg-orange-500 transition-all duration-300"
+              className="flex justify-center items-center gap-2 rounded-md bg-orange-600 px-2 sm:px-3 w-full py-1 sm:py-2 text-white text-xs sm:text-lg shadow-black/30 shadow-md hover:bg-orange-500 transition-all duration-300"
             >
               <i className="bi-whatsapp"></i>
               <span>Pesan Sekarang</span>
             </a>
           </div>
-          <div className="w-3/12 h-70 p-5 bg-white rounded-xl shadow-black/20 shadow-md flex flex-col justify-between items-center">
-            <h1 className="text-center font-bold text-orange-500 text-xl mb-2">
+          <div className="w-full sm:w-3/12 h-55 sm:h-70 p-3 sm:p-5 bg-white rounded-xl shadow-black/20 shadow-md flex flex-col justify-between items-center">
+            <h1 className="text-center font-bold text-orange-500 text-sm sm:text-xl mb-1 sm:mb-2">
               Buku Menu
             </h1>
-            <p className="mb-3 text-center">
+            <p className="mb-1 sm:mb-3 text-center text-xs sm:text-base">
               Buat buku menu resto Anda lebih menarik lagi dengan jasa cetak
               buku menu dari Kami, menjamin hasil cetak berkualitas dengan harga
               terjangkau.
@@ -183,7 +185,7 @@ export default function Home({dataApp, dataPembayaran, dataLayanan}) {
             <a
               href={dataApp.links.whatsapp}
               target="_blank"
-              className="flex justify-center items-center gap-2 rounded-md bg-orange-600 px-3 w-full py-2 text-white text-lg shadow-black/30 shadow-md hover:bg-orange-500 transition-all duration-300"
+              className="flex justify-center items-center gap-2 rounded-md bg-orange-600 px-2 sm:px-3 w-full py-1 sm:py-2 text-white text-xs sm:text-lg shadow-black/30 shadow-md hover:bg-orange-500 transition-all duration-300"
             >
               <i className="bi-whatsapp"></i>
               <span>Pesan Sekarang</span>
