@@ -73,7 +73,7 @@ export default function Footer({dataApp,dataLayanan, dataPembayaran}) {
           <h1 className="mb-2 sm:mb-5 font-bold text-lg sm:text-2xl">
             LAYANAN
           </h1>
-          <ul className="w-full list-none sm:list-disc ms-0 sm:ms-5 sm:text-base text-xs">
+          <ul className="w-full list-none sm:list-disc ms-0 sm:ms-5 sm:text-base text-sm">
             {dataLayanan.map(
               ({ judul, link, gambar, bintang, keterangan, online }, index) => (
                 <li
