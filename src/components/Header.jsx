@@ -126,7 +126,7 @@ export default function Header({dataApp}) {
           </NavLink> */}
         </div>
         <i
-          className={`bi-list sm:hidden cursor-pointer text-lg hover:text-orange-500 hover:rotate-90 transition-all duration-300 ${
+          className={`bi-list sm:hidden cursor-pointer text-xl hover:text-orange-500 hover:rotate-90 transition-all duration-300 ${
             menuSmall ? "rotate-90 text-orange-500" : ""
           }`}
           onClick={openMenuSmall}
