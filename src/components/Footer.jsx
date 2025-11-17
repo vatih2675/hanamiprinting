@@ -92,7 +92,7 @@ export default function Footer({dataApp,dataLayanan, dataPembayaran}) {
           <h1 className="mb-2 sm:mb-5 font-bold text-lg sm:text-2xl sm:text-start text-center w-full">
             METODE PEMBAYARAN
           </h1>
-          <div className="w-full flex flex-wrap justify-around items-center gap-1 sm:gap-5">
+          <div className="w-full flex flex-wrap justify-around items-center gap-2 sm:gap-5">
             <span
               className="font-bold text-base sm:text-xl flex justify-center items-center hover:scale-110 transition-all duration-300"
               title="Tunai"
@@ -105,7 +105,7 @@ export default function Footer({dataApp,dataLayanan, dataPembayaran}) {
                 src={`../pembayaran/white/${image}`}
                 alt={title}
                 title={`${title} - ${akun}`}
-                className="h-4 sm:h-7 hover:scale-110 transition-all duration-300"
+                className="h-5 sm:h-7 hover:scale-110 transition-all duration-300"
               />
             ))}
           </div>
