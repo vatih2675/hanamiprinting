@@ -70,7 +70,7 @@ export default function Header({dataApp}) {
           onClick={() => (window.location.href = "/")}
           src={logo}
           alt="Hanami Printing"
-          className="w-30 sm:w-70 cursor-pointer"
+          className="w-40 sm:w-70 cursor-pointer"
         />
         <div className="hidden sm:flex justify-center items-center gap-10">
           <NavLink
@@ -126,7 +126,7 @@ export default function Header({dataApp}) {
           </NavLink> */}
         </div>
         <i
-          className={`bi-list sm:hidden cursor-pointer hover:text-orange-500 hover:rotate-90 transition-all duration-300 ${
+          className={`bi-list sm:hidden cursor-pointer text-lg hover:text-orange-500 hover:rotate-90 transition-all duration-300 ${
             menuSmall ? "rotate-90 text-orange-500" : ""
           }`}
           onClick={openMenuSmall}
