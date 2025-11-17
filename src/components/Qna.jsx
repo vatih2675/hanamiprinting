@@ -276,7 +276,7 @@ export default function Footer({dataApp, dataLayanan, dataPembayaran}) {
             </h1>
             {/* <h3 className="w-full font-bold text-lg">Produk</h3> */}
             <div className="flex justify-start items-start gap-3 sm:gap-5">
-              <ul className="w-5/12 sm:w-3/12 text-justify mb-1 sm:mb-3 list-disc ms-5 text-xs sm:text-base">
+              <ul className="w-5/12 sm:w-3/12 text-start mb-1 sm:mb-3 list-disc ms-5 text-xs sm:text-base">
                 <li>Fotocopy</li>
                 <li>Jilid</li>
                 <li>Laminating</li>
@@ -302,7 +302,7 @@ export default function Footer({dataApp, dataLayanan, dataPembayaran}) {
                   Cetak Kop Surat<span className="text-red-500">*</span>
                 </li>
               </ul>
-              <ul className="w-7/12 sm:w-3/12 text-justify mb-1 sm:mb-3 list-disc ms-5 text-xs sm:text-base">
+              <ul className="w-7/12 sm:w-3/12 text-start mb-1 sm:mb-3 list-disc ms-5 text-xs sm:text-base">
                 <li>
                   Cetak ID Card<span className="text-red-500">*</span>
                 </li>
