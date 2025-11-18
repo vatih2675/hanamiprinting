@@ -13,6 +13,7 @@ export default function Home({dataApp, dataPembayaran, dataLayanan}) {
             src={digitalPrinting}
             alt="Hanami Printing"
             className="w-[50%] sm:w-[90%]"
+            data-aos="fade-up"
           />
         </div>
         <div className="w-full sm:w-6/12 flex flex-col justify-center items-start gap-1 sm:gap-5">
@@ -90,6 +91,7 @@ export default function Home({dataApp, dataPembayaran, dataLayanan}) {
               <NavLink
                 to={`/layanan/${link}`}
                 key={index}
+                data-aos="fade-up"
                 className="w-4/12 sm:w-3/12 p-3 sm:p-5 cursor-pointer hover:scale-105 transition-all duration-300"
               >
                 <img
