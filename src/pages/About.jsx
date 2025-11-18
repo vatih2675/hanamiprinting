@@ -61,15 +61,15 @@ export default function About({dataApp}) {
         </div>
         <div className="w-full px-3 sm:px-20 py-5 sm:py-10 bg-gray-800 flex justify-between items-center gap-5 shadow-black/20 shadow-lg">
           <div className="flex flex-col justify-center items-start text-white">
-            <h1 className="font-bold text-sm sm:text-4xl">
+            <h1 className="font-bold text-xs sm:text-4xl">
               Hanami Printing solusi kebutuhan Anda.
             </h1>
-            <h1 className="font-bold text-sm sm:text-4xl">Punya pertanyaan?</h1>
+            <h1 className="font-bold text-xs sm:text-4xl">Punya pertanyaan?</h1>
           </div>
           <a
             href={dataApp.links.whatsapp}
             target="_blank"
-            className="flex justify-center items-center gap-2 rounded-md bg-orange-600 px-2 sm:px-5 py-1 sm:py-3 text-white text-sm sm:text-lg shadow-black/30 shadow-md hover:bg-orange-500 hover:animate-bounce transition-all duration-300"
+            className="flex justify-center items-center gap-2 rounded-md bg-orange-600 px-2 sm:px-5 py-1 sm:py-3 text-white text-xs sm:text-lg shadow-black/30 shadow-md hover:bg-orange-500 hover:animate-bounce transition-all duration-300"
           >
             <i className="bi-whatsapp"></i>
             <span className="inline-block">Hubungi Kami</span>
