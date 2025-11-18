@@ -15,47 +15,52 @@ export const dataApp = {
 }
 
 export const dataPembayaran = [
-    {
-        title: "Dana",
-        akun: "0895708460123",
-        image: "Dana.png",
-    },
-    {
-        title: "OVO",
-        akun: "0895708460123",
-        image: "OVO.png",
-    },
-    {
-        title: "GoPay",
-        akun: "0895708460123",
-        image: "GoPay.png",
-    },
-    {
-        title: "Shopee Pay",
-        akun: "0895708460123",
-        image: "ShopeePay.png",
-    },
-    {
-        title: "BCA",
-        akun: "7975625991",
-        image: "BCA.png",
-    },
-    {
-        title: "Muamalat",
-        akun: "8110077620",
-        image: "Muamalat.png",
-    },
-    {
-        title: "Sea Bank",
-        akun: "901849225983",
-        image: "SeaBank.png",
-    },
-    {
-        title: "Allo Bank",
-        akun: "0895708460123",
-        image: "AlloBank.png",
-    },
-]
+  {
+    title: "Dana",
+    akun: "0895708460123",
+    image: "Dana.png",
+  },
+  {
+    title: "OVO",
+    akun: "0895708460123",
+    image: "OVO.png",
+  },
+  {
+    title: "GoPay",
+    akun: "0895708460123",
+    image: "GoPay.png",
+  },
+  {
+    title: "Shopee Pay",
+    akun: "0895708460123",
+    image: "ShopeePay.png",
+  },
+  {
+    title: "QRIS",
+    akun: "QRIS",
+    image: "QRIS.png",
+  },
+  {
+    title: "BCA",
+    akun: "7975625991",
+    image: "BCA.png",
+  },
+  {
+    title: "Muamalat",
+    akun: "8110077620",
+    image: "Muamalat.png",
+  },
+  {
+    title: "Sea Bank",
+    akun: "901849225983",
+    image: "SeaBank.png",
+  },
+  {
+    title: "Allo Bank",
+    akun: "0895708460123",
+    image: "AlloBank.png",
+  },
+];
 
 export const dataLayanan = [
     {
