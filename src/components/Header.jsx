@@ -132,7 +132,7 @@ export default function Header({dataApp}) {
           onClick={openMenuSmall}
         ></i>
         <div
-          className={`flex-col justify-center items-center absolute bg-white top-7 right-7 text-sm border border-gray-200 rounded-lg shadow-black/10 shadow-md ${
+          className={`z-10 flex-col justify-center items-center absolute bg-white top-7 right-7 text-sm border border-gray-200 rounded-lg shadow-black/10 shadow-md ${
             menuSmall ? "flex sm:hidden" : "hidden"
           }`}
         >
