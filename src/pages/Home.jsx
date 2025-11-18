@@ -19,7 +19,7 @@ export default function Home({dataApp, dataPembayaran, dataLayanan}) {
           <h3 className="w-full text-center sm:text-start text-orange-500 font-bold text-xl">
             HANAMI PRINTING
           </h3>
-          <h1 className="w-full text-center sm:text-start font-bold text-2xl sm:text-6xl">
+          <h1 className="w-full text-center sm:text-start font-bold text-lg sm:text-6xl">
             Tempat Percetakan Murah Di Gorontalo
           </h1>
           <p className="w-full text-sm sm:text-base text-center sm:text-justify">
