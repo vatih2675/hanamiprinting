@@ -30,7 +30,7 @@ export default function Home({dataApp, dataPembayaran, dataLayanan}) {
           <a
             href={dataApp.links.whatsapp}
             target="_blank"
-            className="flex justify-center items-center gap-2 rounded-md bg-orange-600 px-2 sm:px-5 py-1 sm:py-3 text-white text-sm sm:text-lg shadow-black/30 shadow-md hover:bg-orange-500 transition-all duration-300 mx-auto sm:me-auto my-3 sm:my-0"
+            className="flex justify-center items-center gap-2 rounded-md bg-orange-600 px-2 sm:px-5 py-1 sm:py-3 text-white text-sm sm:text-lg shadow-black/30 shadow-md hover:bg-orange-500 transition-all duration-300 mx-auto sm:mx-0 my-3 sm:my-0"
           >
             <i className="bi-whatsapp"></i>
             <span>Hubungi Kami</span>
