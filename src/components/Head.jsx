@@ -1,5 +1,5 @@
+import { linkAksesOpen } from "../constants/Function";
 import logo from "/images/icon.png";
-import { linkAksesOpen } from "./constants/Function";
 
 export default function Head() {
   return (
