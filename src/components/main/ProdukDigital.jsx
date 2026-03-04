@@ -4,7 +4,7 @@ import { formatAngka, linkAksesOpen } from "../../constants/Function";
 export default function ProdukDigital() {
   return (
     <div id="produk-digital" className="w-full h-full cursor-default p-5">
-      <h1 className="text-center font-black text-orange-800 text-3xl mb-5">
+      <h1 className="text-center font-black text-orange-800 text-xl sm:text-3xl mb-5 uppercase">
         PRODUK DIGITAL
       </h1>
       <div className="flex flex-col sm:flex-row sm:flex-wrap justify-center items-start sm:gap-0 gap-3">

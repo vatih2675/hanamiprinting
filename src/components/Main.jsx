@@ -1,5 +1,9 @@
 import Aplikasi from "./main/Aplikasi";
 import Hero from "./main/Hero";
+import KebijakanPrivasi from "./main/KebijakanPrivasi";
+import KetentuanLayanan from "./main/KetentuanLayanan";
+import PengembalianDana from "./main/PengembalianDana";
+import Pengiriman from "./main/Pengiriman";
 import ProdukDigital from "./main/ProdukDigital";
 
 export default function Main() {
@@ -8,6 +12,10 @@ export default function Main() {
       <Hero />
       {/* <Aplikasi /> */}
       <ProdukDigital />
+      <KetentuanLayanan />
+      <KebijakanPrivasi />
+      <PengembalianDana />
+      <Pengiriman />
     </section>
   );
 }
