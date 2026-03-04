@@ -8,9 +8,9 @@ export default function Menu() {
           title="Beranda"
         ></a>
         <a
-          href="#menu"
+          href="#produk-digital"
           className="bi-list cursor-pointer transition-all duration-300 hover:scale-120"
-          title="Menu"
+          title="Produk Digital"
         ></a>
       </div>
     </section>
