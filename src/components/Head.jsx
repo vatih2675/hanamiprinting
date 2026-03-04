@@ -39,6 +39,11 @@ export default function Head() {
           ></span>
         </div>
       </div>
+      <img
+        src="https://api.qrserver.com/v1/create-qr-code/?size=1000x1000&data=https://wa.me/message/DLRPWPFGCTXOD1"
+        alt="WhatsApp Hanami Printing"
+        className="w-30 bg-white p-2 rounded-xl hidden sm:block"
+      />
     </section>
   );
 }
