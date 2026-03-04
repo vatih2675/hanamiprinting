@@ -1,6 +1,7 @@
 import logo from "/images/icon.png";
+import { linkAksesOpen } from "./constants/Function";
 
-export default function Head({ linkAkses, linkAksesOpen }) {
+export default function Head() {
   return (
     <section className="sm:w-[20%] w-[85%] sm:h-[80%] h-[20%] bg-orange-800 border-l-4 border-t-4 border-r-4 sm:border-r-0 sm:border-b-4 border-white rounded-tl-4xl sm:rounded-tr-none rounded-tr-4xl sm:rounded-bl-4xl  p-2 sm:p-5 shadow-lg shadow-black/50 flex sm:flex-col justify-evenly items-center cursor-default">
       <img
