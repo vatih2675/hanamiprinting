@@ -1,7 +1,10 @@
 export default function KetentuanLayanan() {
   return (
-    <div id="ketentuan-layanan" className="w-full h-fit cursor-default p-5 text-sm sm:text-base">
-      <h1 className="text-center font-black text-orange-800 text-xl sm:text-3xl mb-5 uppercase">
+    <div
+      id="ketentuan-layanan"
+      className="w-full h-fit bg-orange-50 cursor-default p-5 text-sm sm:text-base shadow-md shadow-black/20"
+    >
+      <h1 className="text-center font-black text-orange-800 text-xl sm:text-3xl mb-5 uppercase ">
         KETENTUAN LAYANAN
       </h1>
       <p className="text-justify mb-3">

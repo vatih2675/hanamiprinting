@@ -5,7 +5,10 @@ import facebookIcon from "/images/facebook-icon.svg";
 
 export default function Hero() {
   return (
-    <div id="hero" className="w-full h-full bg-linear-to-t from-orange-300 to-orange-600 flex sm:flex-row flex-col justify-center items-center overflow-hidden cursor-default pointer-events-none mb-5">
+    <div
+      id="hero"
+      className="w-full h-full bg-linear-to-t from-orange-300 to-orange-600 flex sm:flex-row flex-col justify-center items-center overflow-hidden cursor-default pointer-events-none mb-5 shadow-md shadow-black/20"
+    >
       <div className="w-full h-full p-2 sm:p-5 flex sm:flex-col flex-wrap sm:flex-nowrap justify-center sm:justify-evenly sm:gap-0 gap-3 items-center sm:items-end text-white font-black sm:text-4xl text-shadow-black/20 text-shadow-lg">
         <p>Fotocopy</p>
         <p>Jilid</p>
